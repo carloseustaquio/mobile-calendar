@@ -1,0 +1,98 @@
+.custom-calendar{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .rdrDefinedRangesWrapper{
+    display: none;
+  }
+
+  .rdrMonthAndYearWrapper{
+    padding: 0;
+    position: relative;
+    height: 80px;
+
+    hr {
+      background:#b1c9c9;
+      border: none;
+      min-height: 0.1rem;
+      width: 100%;
+      opacity: 0.4;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+    
+  .rdrMonthAndYearPickers{
+    color: #526565;
+    font-weight: normal;
+  }
+
+  .rdrMonth{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .rdrNextPrevButton{
+    border-radius: 4px;
+    margin: 0;
+    i {
+      display: none;
+    }
+
+    &.rdrPprevButton{
+      background: url('../assets/arrow-back.svg');  
+    }
+
+    &.rdrNextButton{
+      background: url('../assets/arrow-next.svg');
+    }
+  }
+
+  .rdrDays{
+    position: relative;
+
+    .rdrDay{
+      margin: 5px 0;
+      height: 2.7em;
+      
+      .rdrStartEdge{
+        width: 72%;
+        right:0;
+        left:unset;
+
+        &.rdrEndEdge{
+          background: none !important;
+        }
+      }
+
+      .rdrInRange, .rdrStartEdge, .rdrEndEdge{
+        background: #cef9fa; // default color
+      }
+
+      .rdrStartEdge + .rdrDayNumber{
+        background: #15d4d8;
+        border-radius: 16px;
+        left: unset;
+        right: unset;
+        padding: 0 6px;
+        width: 1.85em;
+        height: 1.85em;
+        @include centerX;
+        box-shadow: 0 0 7px #15d4d8;
+
+        span{
+          color: #fff !important;
+        }
+      }
+
+      .rdrDayNumber{
+        span{
+          color: #1d2429 !important;
+        }
+      }
+    }
+
+  }
+}
