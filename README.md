@@ -10,3 +10,6 @@
 ### How to run this example (Browser)
 1. Install all dependencies: ```npm install```
 2. Run the app: ```npm start```
+
+### Demo
+![Website Demo](/reload-calendar-demo.gif)
