@@ -13,7 +13,7 @@
     "cordova-android": "^8.1.0",
     "cordova_script": "0.0.1",
     "date-fns": "^2.0.0-beta.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.0",
     "react-date-range": "^1.0.3",
     "react-dom": "^16.13.0",
