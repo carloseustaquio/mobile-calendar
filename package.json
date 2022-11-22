@@ -19,7 +19,7 @@
     "react-dom": "^16.13.0",
     "react-interactable": "^0.6.4",
     "react-panresponder-web": "^1.0.2",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "rimraf": "^3.0.2"
   },
   "scripts": {
